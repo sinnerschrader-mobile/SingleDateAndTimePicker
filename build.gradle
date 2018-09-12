@@ -3,8 +3,7 @@
 buildscript {
     repositories {
         jcenter()
-        google()
-    }
+        maven { url 'https://maven.google.com' }    }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.0'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
@@ -16,7 +15,7 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
+        maven { url 'https://maven.google.com' }
         jcenter()
         maven { url "https://jitpack.io" }
     }
@@ -27,7 +26,7 @@ ext {
     minSdk = 14
     supportVersion = "27.0.2"
 
-    github = 'https://github.com/florent37/SingleDateAndTimePicker'
+    github = 'https://github.com/sinnerschrader-mobile/SingleDateAndTimePicker'
 
     libraryGroup = 'com.github.florent37'
     libraryName = 'singledateandtimepicker'
